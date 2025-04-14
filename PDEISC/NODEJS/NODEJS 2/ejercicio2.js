@@ -32,6 +32,3 @@ server.listen(8080, '127.0.0.1', () => {
 });
 
 
-server.listen(8089, '127.0.0.1', () => {
-    console.log('Listening on 127.0.0.1:8080');
-});
