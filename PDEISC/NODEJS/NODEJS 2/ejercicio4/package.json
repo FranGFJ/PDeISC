@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "lower-case": "^2.0.2",
+    "upper-case": "^2.0.2"
+  }
+}
