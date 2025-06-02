@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ingreso de Números</title>
+</head>
+<body>
+    <h1>Ingreso de Números</h1>
+    <div class="container">
+        <p>Ingrese entre 10 y 20 números:</p>
+        <input type="number" id="numero-input" placeholder="Ingrese un número">
+        <button id="agregar-btn">Agregar Número</button>
+        <button id="guardar-btn" disabled>Guardar en Archivo TXT</button>
+        
+        <div id="mensaje"></div>
+        
+        <h3>Números ingresados (<span id="contador">0</span>/20):</h3>
+        <div id="numeros-lista"></div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

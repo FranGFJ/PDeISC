@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Filtrador de Números</title>
+</head>
+<body>
+  <h1>Filtrador de Números</h1>
+  <p>Sube un archivo TXT con números para filtrar aquellos que comienzan y terminan con el mismo dígito.</p>
+  
+  <form id="uploadForm">
+    <input type="file" id="fileInput" accept=".txt" required>
+    <button type="submit" id="processBtn">Procesar Archivo</button>
+  </form>
+  
+  <div id="loading" class="hidden">
+    <p>Procesando archivo...</p>
+  </div>
+  
+  <div id="error" class="error hidden"></div>
+  
+  <div id="results" class="hidden">
+    <h2>Resultados</h2>
+    
+    <div class="stats">
+      <p>Total de números: <span id="totalCount">0</span></p>
+      <p>Números útiles: <span id="usefulCount">0</span></p>
+      <p>Números no útiles: <span id="uselessCount">0</span></p>
+      <p>Porcentaje útil: <span id="percentage">0</span>%</p>
+    </div>
+    
+    <h3>Números filtrados:</h3>
+    <div id="numbersList"></div>
+    
+    <button id="downloadBtn" class="hidden">Descargar Resultados</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
