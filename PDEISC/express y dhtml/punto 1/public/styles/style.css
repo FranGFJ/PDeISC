@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.botones {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#titulo {
+    margin: 20px 0;
+    min-height: 50px;
+}
+
+#imagen-container img {
+    width: auto; /* Permite que el JS controle el ancho */
+    max-width: 100%; /* Para responsividad pero no interferirá con el JS */
+    height: auto;
+    transition: width 0.3s ease; /* Agrega animación suave */
+}

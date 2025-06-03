@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Express con DHTML</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactividad con DHTML</h1>
+        <nav class="nav-buttons">
+            <button data-section="dom-manipulation">Manipulación DOM</button>
+            <button data-section="event-listener">Event Listeners</button>
+            <button data-section="form-validation">Validación Formulario</button>
+            <button data-section="drag-drop">Arrastrar y Soltar</button>
+            <button data-section="animation">Animaciones</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dom-manipulation" class="content-section">
+            <h2>Manipulación del DOM</h2>
+            <div class="dom-container">
+                <button id="create-element">Crear Elemento</button>
+                <button id="change-text">Cambiar Texto</button>
+                <button id="change-color">Cambiar Color</button>
+                <div id="dom-target"></div>
+            </div>
+        </section>
+
+        <section id="event-listener" class="content-section hidden">
+            <h2>Event Listeners</h2>
+            <div class="event-box" id="clickable-box"></div>
+            <p id="event-message">Haz clic, pasa el mouse o mantén presionado</p>
+        </section>
+
+        <section id="form-validation" class="content-section hidden">
+            <h2>Validación de Formulario</h2>
+            <form id="validation-form">
+                <input type="email" id="user-email" placeholder="Ingresa tu email">
+                <span id="email-error" class="error-message"></span>
+                <button type="submit">Validar</button>
+            </form>
+        </section>
+
+        <section id="drag-drop" class="content-section hidden">
+            <h2>Arrastrar y Soltar</h2>
+            <div class="drag-container">
+                <div id="draggable" draggable="true">Arrástrame</div>
+                <div id="dropzone">Suelta aquí</div>
+            </div>
+        </section>
+
+        <section id="animation" class="content-section hidden">
+            <h2>Animaciones CSS/JS</h2>
+            <button id="animate-button">Iniciar Animación</button>
+            <div class="animated-box"></div>
+        </section>
+    </main>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

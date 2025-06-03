@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Enlaces</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Manipulación de Enlaces</h1>
+        
+        <div class="controls">
+            <h2>Crear Enlaces</h2>
+            <div class="button-group">
+                <button id="create-google">Google</button>
+                <button id="create-youtube">YouTube</button>
+                <button id="create-github">GitHub</button>
+                <button id="create-twitter">Twitter</button>
+                <button id="create-maps">Google Maps</button>
+            </div>
+            
+            <h2>Modificar Enlaces</h2>
+            <div class="modify-controls">
+                <select id="link-selector" disabled>
+                    <option value="">Seleccione un enlace</option>
+                </select>
+                <input type="text" id="new-url" placeholder="Nueva URL">
+                <button id="modify-link" disabled>Modificar</button>
+            </div>
+        </div>
+        
+        <div class="links-container" id="links-container">
+            <!-- Aquí aparecerán los enlaces creados -->
+        </div>
+        
+        <div class="log-container" id="log-container">
+            <h3>Registro de Cambios:</h3>
+            <div id="change-log"></div>
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
