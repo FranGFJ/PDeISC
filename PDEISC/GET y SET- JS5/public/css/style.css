@@ -1,0 +1,166 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+/* Formularios */
+.form-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button, .btn {
+    display: inline-block;
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+button:hover, .btn:hover {
+    background: #2980b9;
+}
+
+/* Resultados */
+.results-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.query-results {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.result-box {
+    padding: 10px;
+    background: #e8f4f8;
+    border-radius: 5px;
+}
+
+.result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+/* Tabla de animales */
+.current-animals {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e3f2fd;
+}
+
+.no-animals {
+    color: #7f8c8d;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 900px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .form-section, .current-animals, .results-section {
+        margin-bottom: 20px;
+    }
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+    th, td {
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+    tr {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+    thead {
+        display: none;
+    }
+}
