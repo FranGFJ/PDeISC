@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %> | <%= appTitle %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="/"><%= appTitle %></a>
+      </div>
+      <ul class="nav-links">
+        <% menuItems.forEach(item => { %>
+          <li class="nav-item <%= item.url === '/ejercicios' ? 'active' : '' %>">
+            <a href="<%= item.url %>"><%= item.text %></a>
+          </li>
+        <% }); %>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1><%= title %></h1>
+    
+    <!-- push() -->
+    <section id="push" class="exercise">
+      <h2>push()</h2>
+      
+      <div class="demo">
+        <h3>1. Array vacío + 3 frutas</h3>
+        <button onclick="ejemploPush()">Ejecutar</button>
+        <div class="result" id="push-1"></div>
+      </div>
+      
+
+    </section>
+
+    <!-- pop() -->
+    <section id="pop" class="exercise">
+      <h2>pop()</h2>
+      
+      <div class="demo">
+        <h3>1. Eliminar último animal</h3>
+        <button onclick="ejemploPop()">Ejecutar</button>
+        <div class="result" id="pop-1"></div>
+      </div>
+    </section>
+
+    <!-- unshift() -->
+    <section id="unshift" class="exercise">
+      <h2>unshift()</h2>
+      
+      <div class="demo">
+        <h3>1. Agregar colores al principio</h3>
+        <button onclick="ejemploUnshift()">Ejecutar</button>
+        <div class="result" id="unshift-1"></div>
+      </div>
+    </section>
+
+    <!-- shift() -->
+    <section id="shift" class="exercise">
+      <h2>shift()</h2>
+      
+      <div class="demo">
+        <h3>1. Quitar primer número</h3>
+        <button onclick="ejemploShift()">Ejecutar</button>
+        <div class="result" id="shift-1"></div>
+      </div>
+    
+    </section>
+
+<!-- splice() -->
+<section id="splice" class="exercise">
+  <h2>splice()</h2>
+  <div class="demo">
+    <h3>Eliminar y reemplazar elementos</h3>
+    <button onclick="ejemploSplice()">Ejecutar</button>
+    <div class="result" id="splice-result"></div>
+  </div>
+</section>
+
+<!-- slice() -->
+<section id="slice" class="exercise">
+  <h2>slice()</h2>
+  <div class="demo">
+    <h3>Crear copias parciales</h3>
+    <button onclick="ejemploSlice()">Ejecutar</button>
+    <div class="result" id="slice-result"></div>
+  </div>
+</section>
+
+<!-- indexOf() -->
+<section id="indexOf" class="exercise">
+  <h2>indexOf()</h2>
+  <div class="demo">
+    <h3>Encontrar posiciones</h3>
+    <button onclick="ejemploIndexOf()">Ejecutar</button>
+    <div class="result" id="indexOf-result"></div>
+  </div>
+</section>
+
+<!-- includes() -->
+<section id="includes" class="exercise">
+  <h2>includes()</h2>
+  <div class="demo">
+    <h3>Verificar existencia</h3>
+    <button onclick="ejemploIncludes()">Ejecutar</button>
+    <div class="result" id="includes-result"></div>
+  </div>
+</section>
+
+<!-- forEach() -->
+<section id="forEach" class="exercise">
+  <h2>forEach()</h2>
+  <div class="demo">
+    <h3>Iterar elementos</h3>
+    <button onclick="ejemploForEach()">Ejecutar</button>
+    <div class="result" id="forEach-result"></div>
+  </div>
+</section>
+
+<!-- map() -->
+<section id="map" class="exercise">
+  <h2>map()</h2>
+  <div class="demo">
+    <h3>Transformar arrays</h3>
+    <button onclick="ejemploMap()">Ejecutar</button>
+    <div class="result" id="map-result"></div>
+  </div>
+</section>
+
+<!-- filter() -->
+<section id="filter" class="exercise">
+  <h2>filter()</h2>
+  <div class="demo">
+    <h3>Filtrar elementos</h3>
+    <button onclick="ejemploFilter()">Ejecutar</button>
+    <div class="result" id="filter-result"></div>
+  </div>
+</section>
+
+<!-- reduce() -->
+<section id="reduce" class="exercise">
+  <h2>reduce()</h2>
+  <div class="demo">
+    <h3>Reducir a un valor</h3>
+    <button onclick="ejemploReduce()">Ejecutar</button>
+    <div class="result" id="reduce-result"></div>
+  </div>
+</section>
+
+<!-- sort() -->
+<section id="sort" class="exercise">
+  <h2>sort()</h2>
+  <div class="demo">
+    <h3>Ordenar elementos</h3>
+    <button onclick="ejemploSort()">Ejecutar</button>
+    <div class="result" id="sort-result"></div>
+  </div>
+</section>
+
+<!-- reverse() -->
+<section id="reverse" class="exercise">
+  <h2>reverse()</h2>
+  <div class="demo">
+    <h3>Invertir orden</h3>
+    <button onclick="ejemploReverse()">Ejecutar</button>
+    <div class="result" id="reverse-result"></div>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Ejercicios con Arrays. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="/js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background: #35424a;
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.navbar-brand a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 1.5rem;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  color: #e8491d;
+}
+
+.nav-item.active a {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+/* Pestañas */
+.tabs {
+  margin: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  background: #f4f4f4;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab-button.active {
+  background: #e8491d;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px 0;
+}
+
+/* Ejercicios */
+.exercise {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.exercise h2 {
+  color: #35424a;
+  border-bottom: 2px solid #e8491d;
+  padding-bottom: 10px;
+}
+
+.demo {
+  background: #f9f9f9;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.demo h3 {
+  margin-top: 0;
+  color: #35424a;
+}
+
+.result {
+  margin-top: 10px;
+  padding: 10px;
+  background: #fff;
+  border-left: 3px solid #e8491d;
+}
+
+button, .btn {
+  background: #e8491d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover, .btn:hover {
+  background: #35424a;
+}
+
+input[type="number"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  background: #35424a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
