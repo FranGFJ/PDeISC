@@ -1,0 +1,74 @@
+/* Estilos personalizados para complementar Bootstrap */
+
+/* Estilos generales */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header personalizado */
+header.bg-primary {
+    background: linear-gradient(135deg, #0d6efd 0%, #084298 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar personalizado */
+.navbar-dark {
+    background-color: #212529 !important;
+}
+
+/* Cards personalizadas */
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-header {
+    font-weight: 600;
+}
+
+/* Badges personalizados */
+.badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+/* List group items personalizados */
+.list-group-item-action:hover {
+    background-color: #f8f9fa;
+}
+
+/* Botones sociales */
+.btn-outline-primary:hover {
+    color: #fff !important;
+}
+.btn-outline-info:hover {
+    color: #fff !important;
+}
+.btn-outline-danger:hover {
+    color: #fff !important;
+}
+.btn-outline-warning:hover {
+    color: #000 !important;
+}
+
+/* Footer personalizado */
+footer.bg-dark {
+    background-color: #1a1e21 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+}

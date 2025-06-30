@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Diario Deportivo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header con navbar -->
+    <header class="bg-primary text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-4 fw-bold"><i class="fas fa-newspaper me-2"></i>Mi Diario Deportivo</h1>
+                    <p class="lead mb-0">Pasión por el fútbol en colores</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <span class="badge bg-warning text-dark fs-6">Edición Especial Mundial de Clubes</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-home me-1"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-futbol me-1"></i>Fútbol</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-trophy me-1"></i>Torneos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-calendar me-1"></i>Calendario</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar...">
+                    <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Artículo principal -->
+            <article class="col-lg-8">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-success text-white">
+                        <h2 class="h4 mb-0"><i class="fas fa-trophy me-2"></i>Mundial de Clubes 2025: Todo lo que necesitas saber</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="badge bg-info text-dark"><i class="far fa-calendar me-1"></i>Publicado el 31 de marzo, 2025</span>
+                            <div>
+                                <span class="badge bg-danger me-1">Destacado</span>
+                                <span class="badge bg-warning text-dark">Exclusivo</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Imagen destacada -->
+                        <div class="text-center mb-4">
+                            <p class="text-muted mt-2"><small>El nuevo formato del Mundial de Clubes promete revolucionar el fútbol internacional</small></p>
+                        </div>
+                        
+                        <!-- Sección Participantes -->
+                        <div class="mb-4 p-3 bg-light rounded">
+                            <h3 class="h5 text-uppercase border-bottom pb-2"><i class="fas fa-users me-2"></i>Participantes confirmados</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span><strong class="text-primary">Manchester City</strong> (Campeón de la Champions League)</span>
+                                    <span class="badge bg-primary rounded-pill"><i class="fas fa-star"></i></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span><strong class="text-success">Fluminense</strong> (Campeón de la Copa Libertadores)</span>
+                                    <span class="badge bg-success rounded-pill"><i class="fas fa-star"></i></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span><strong class="text-danger">Al Ahly</strong> (Campeón de África)</span>
+                                    <span class="badge bg-danger rounded-pill"><i class="fas fa-star"></i></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span><strong class="text-warning">Urawa Red Diamonds</strong> (Campeón de Asia)</span>
+                                    <span class="badge bg-warning rounded-pill"><i class="fas fa-star"></i></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span><strong class="text-info">León</strong> (Campeón de Concacaf)</span>
+                                    <span class="badge bg-info rounded-pill"><i class="fas fa-star"></i></span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span><strong class="text-secondary">Auckland City</strong> (Campeón de Oceanía)</span>
+                                    <span class="badge bg-secondary rounded-pill"><i class="fas fa-star"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Sección Formato -->
+                        <div class="mb-4 p-3 bg-light rounded">
+                            <h3 class="h5 text-uppercase border-bottom pb-2"><i class="fas fa-chess-board me-2"></i>Formato del torneo</h3>
+                            <p>El Mundial de Clubes 2025 marcará el inicio de un nuevo capítulo en la historia del fútbol al expandirse a <strong>32 equipos</strong>. Este formato busca ofrecer mayor competitividad y permitir la participación de más clubes de distintas regiones del mundo.</p>
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <div class="card mb-3">
+                                        <div class="card-header bg-dark text-white">
+                                            <i class="fas fa-calendar-day me-2"></i>Fechas
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">15 al 30 de junio, 2025</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card mb-3">
+                                        <div class="card-header bg-dark text-white">
+                                            <i class="fas fa-map-marked-alt me-2"></i>Sede
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Estados Unidos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Los equipos se dividirán en <strong>8 grupos de 4</strong>, y los dos primeros de cada grupo avanzarán a una fase eliminatoria desde los octavos de final. Este modelo asegura partidos de alta intensidad desde el principio hasta el final.</p>
+                        </div>
+                        
+                        <!-- Sección Favoritos -->
+                        <div class="mb-4 p-3 bg-light rounded">
+                            <h3 class="h5 text-uppercase border-bottom pb-2"><i class="fas fa-crown me-2"></i>Favoritos</h3>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h4 class="card-title h6 text-primary">Manchester City</h4>
+                                            <p class="card-text">Reciente ganador de la Champions League, encabeza la lista de favoritos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h4 class="card-title h6 text-success">Fluminense</h4>
+                                            <p class="card-text">Campeón de la Copa Libertadores, busca reafirmar el poderío sudamericano.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <h4 class="card-title h6 text-danger">Al Ahly</h4>
+                                            <p class="card-text">Campeón africano que siempre sorprende en competiciones internacionales.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Sección Novedades -->
+                        <div class="p-3 bg-light rounded">
+                            <h3 class="h5 text-uppercase border-bottom pb-2"><i class="fas fa-lightbulb me-2"></i>Novedades del torneo</h3>
+                            <p>Esta edición será la primera bajo el nuevo formato y servirá como una prueba importante para futuros torneos de clubes a nivel global.</p>
+                            <div class="alert alert-info mt-3">
+                                <h4 class="alert-heading h6"><i class="fas fa-info-circle me-2"></i>Tecnología avanzada</h4>
+                                <p>La FIFA ha confirmado que habrá implementaciones tecnológicas avanzadas, como el uso extendido del VAR y herramientas para el análisis en tiempo real.</p>
+                            </div>
+                            <div class="alert alert-success">
+                                <h4 class="alert-heading h6"><i class="fas fa-check-circle me-2"></i>Infraestructura</h4>
+                                <p>Estados Unidos ha prometido estadios de última generación y una logística impecable para garantizar el éxito del evento.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <span class="me-3"><i class="far fa-eye me-1"></i> 1,245</span>
+                                <span><i class="far fa-comment me-1"></i> 23 comentarios</span>
+                            </div>
+                            <div>
+                                <button class="btn btn-sm btn-outline-primary me-1"><i class="far fa-thumbs-up"></i> Me gusta</button>
+                                <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-share"></i> Compartir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Sidebar -->
+            <aside class="col-lg-4">
+                <!-- Widget de suscripción -->
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-warning">
+                        <h3 class="h6 mb-0"><i class="fas fa-envelope me-2"></i>Suscríbete</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Recibe las últimas noticias directamente en tu correo.</p>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Tu nombre">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Tu correo electrónico">
+                            </div>
+                            <button type="submit" class="btn btn-warning w-100">Suscribirme</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Widget de últimas noticias -->
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-info text-white">
+                        <h3 class="h6 mb-0"><i class="fas fa-bolt me-2"></i>Últimas noticias</h3>
+                    </div>
+                    <div class="list-group list-group-flush">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1 h6">Messi renueva con Inter Miami</h5>
+                                <small>Hace 2 días</small>
+                            </div>
+                            <p class="mb-1 small">El astro argentino extiende su contrato por un año más.</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1 h6">Nuevo estadio para el Mundial 2026</h5>
+                                <small>Hace 4 días</small>
+                            </div>
+                            <p class="mb-1 small">Se anuncia la construcción de un moderno estadio en Texas.</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1 h6">Cambios en el reglamento FIFA</h5>
+                                <small>Hace 1 semana</small>
+                            </div>
+                            <p class="mb-1 small">Nuevas modificaciones que entrarán en vigor el próximo año.</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Widget de redes sociales -->
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-dark text-white">
+                        <h3 class="h6 mb-0"><i class="fas fa-hashtag me-2"></i>Síguenos</h3>
+                    </div>
+                    <div class="card-body text-center">
+                        <a href="#" class="btn btn-outline-primary btn-sm me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-info btn-sm me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-danger btn-sm me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-warning btn-sm"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Mi Diario Deportivo</h5>
+                    <p>Pasión por el fútbol en todas sus formas.</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Buenos Aires, Argentina</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Enlaces útiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Sobre nosotros</a></li>
+                        <li><a href="#" class="text-white">Contacto</a></li>
+                        <li><a href="#" class="text-white">Política de privacidad</a></li>
+                        <li><a href="#" class="text-white">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-uppercase">Newsletter</h5>
+                    <p>Suscríbete para recibir las últimas noticias.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Tu correo">
+                        <button class="btn btn-primary" type="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2025 Mi Diario Deportivo. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Diseñado con <i class="fas fa-heart text-danger"></i> para los amantes del fútbol</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
