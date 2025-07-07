@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparación Fetch vs Axios</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Comparación de Fetch y Axios</h1>
+            <div class="api-info">
+                <p>API utilizada: <a href="<%= apiEndpoint %>" target="_blank"><%= apiEndpoint %></a></p>
+                <p>Última actualización: <%= lastUpdated %></p>
+            </div>
+        </header>
+
+        <% if (typeof error !== 'undefined' && error) { %>
+    <div class="error-message">
+        <p><%= error %></p>
+    </div>
+<% } %>
+
+        <main class="comparison-container">
+            <section class="method-card fetch-section">
+                <div class="method-header">
+                    <h2>Fetch API</h2>
+                </div>
+                
+                <% if (fetchUsers.length > 0) { %>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% fetchUsers.forEach(user => { %>
+                                    <tr>
+                                        <td><%= user.name %></td>
+                                        <td><%= user.email %></td>
+                                    </tr>
+                                <% }); %>
+                            </tbody>
+                        </table>
+                    </div>
+                <% } else { %>
+                    <p class="no-data">No se encontraron datos</p>
+                <% } %>
+            </section>
+
+            <section class="method-card axios-section">
+                <div class="method-header">
+                    <h2>Axios</h2>
+                </div>
+                
+                <% if (axiosUsers.length > 0) { %>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% axiosUsers.forEach(user => { %>
+                                    <tr>
+                                        <td><%= user.name %></td>
+                                        <td><%= user.email %></td>
+                                    </tr>
+                                <% }); %>
+                            </tbody>
+                        </table>
+                    </div>
+                <% } else { %>
+                    <p class="no-data">No se encontraron datos</p>
+                <% } %>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

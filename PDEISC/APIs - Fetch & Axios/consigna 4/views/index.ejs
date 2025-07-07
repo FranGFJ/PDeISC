@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API de Alumnos</title>
+   <link rel="stylesheet" href="/css/styles.css">
+ 
+</head>
+<body>
+  <h1>API de Alumnos</h1>
+  
+  <div class="container">
+    <h2>Endpoints disponibles:</h2>
+    <p><span class="method get">GET</span> <code>/api/alumnos</code> - Obtener todos los alumnos</p>
+    <p><span class="method post">POST</span> <code>/api/alumnos</code> - Agregar un nuevo alumno</p>
+    
+    <h2>Prueba la API:</h2>
+    <button onclick="fetchAlumnos()">Obtener Alumnos (Fetch)</button>
+    <button onclick="axiosAlumnos()">Obtener Alumnos (Axios)</button>
+    <button onclick="agregarAlumno()">Agregar Alumno</button>
+    
+    <div id="resultado" style="margin-top: 20px;"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario POST con Axios</h1>
+        
+        <% if (error) { %>
+            <div class="alert error">
+                <p><%= error %></p>
+            </div>
+        <% } %>
+
+        <% if (!result) { %>
+            <form action="/submit" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        <% } else { %>
+            <div class="result-container">
+                <h2>¡Envío exitoso!</h2>
+                <div class="result-card">
+                    <p><strong>ID asignado:</strong> <%= result.id %></p>
+                    <p><strong>Nombre:</strong> <%= result.name %></p>
+                    <p><strong>Email:</strong> <%= result.email %></p>
+                </div>
+                <a href="/" class="btn">Nuevo envío</a>
+            </div>
+        <% } %>
+    </div>
+
+    <script>
+        // Versión alternativa con Axios desde el frontend
+        document.querySelector('form')?.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = {
+                nombre: e.target.nombre.value,
+                email: e.target.email.value
+            };
+            
+            try {
+                const response = await axios.post('/submit', formData);
+                window.location.href = '/'; // Recargar para ver resultados
+            } catch (error) {
+                alert('Error: ' + error.message);
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

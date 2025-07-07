@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Búsqueda de Usuarios</h1>
+        
+        <% if (error) { %>
+            <div class="alert error">
+                <p><%= error %></p>
+            </div>
+        <% } %>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar por nombre...">
+        </div>
+
+        <div class="results-container">
+            <table id="usersTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los resultados se cargarán dinámicamente con JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
